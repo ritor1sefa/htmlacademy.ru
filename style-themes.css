@@ -3,9 +3,10 @@
 }
 
 .container {
-  width: 580px;
+  width: 56%;
   margin: 0 auto;
 }
+
 
 .page {
   display: flex;
@@ -16,8 +17,6 @@
   font-family: "Verdana", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  /* color: #f2f2f2;
-  background-color: #27252c; */
   color: #333333;
   background-color: #eae9f2;
 }
@@ -40,33 +39,48 @@ a:focus {
   outline-color: #b6aaff;
 }
 
+/*
 .page-header {
   margin-bottom: 40px;
   background-color: #ffffff;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
+*/
 
-.page-header .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+
+.page-header {
+	/*
+  padding-top: 0px;
+  padding-bottom: 22px;
+    */
   background-image: url("img/raccoons.svg");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom left;
   background-size: 290px 212px;
+  min-height: 212px;
+/*	text-align: center;*//*работает но неинтересно*/
+  /*неработает  :((*/
+  align-items:center;
+  justify-content:center;
+  vertical-align: middle; 
+	
+	
 }
 
+/*
 .page-header a {
   font-size: 16px;
   line-height: 24px;
 }
+*/
 
 .page-title {
   margin: 0;
   margin-bottom: 4px;
   padding: 0;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 36px;  line-height: 48px;
+
 }
 
 .theme-button {
@@ -111,7 +125,7 @@ a:focus {
  }
 
 .about-content {
-   width: 410px;
+/*   width: 410px;*/
    font-size: 14px;
    line-height: 24px;
  }
@@ -192,6 +206,7 @@ p.contacts-name {
 .dark-theme {
   color: #f2f2f2;
   background-color: #17161a;
+  text-shadow: -1px 1px 4px black; /*тени для констраста для тёмной темы*/
 }
 
 .dark-theme .page-header{
