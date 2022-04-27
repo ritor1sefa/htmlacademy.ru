@@ -1,0 +1,20 @@
+@charset "utf-8";
+body {
+	background: #1A293B;
+	padding: 0;
+	margin: 0;
+}
+.top_menu { /* 320px */
+	display: flex;
+	background: rgba(0,0,0,0.30);
+	justify-content:space-between;
+	padding: 20px;
+}
+
+/*intro*/
+
+.back_mobile {
+	height: auto;
+	width: 320px;
+	
+}
