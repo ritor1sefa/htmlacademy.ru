@@ -1,20 +1,97 @@
 @charset "utf-8";
-body {
+body, p {
 	background: #1A293B;
 	padding: 0;
 	margin: 0;
+    width: 320px;
 }
-.top_menu { /* 320px */
+
+.top_menu {
+	z-index: 10000;
+	position: fixed;
+	top: 0px;
+    width: 320px;
+}
+.top_menu- { /* 320px */
 	display: flex;
 	background: rgba(0,0,0,0.30);
 	justify-content:space-between;
 	padding: 20px;
 }
+.top_menu+ {
+	
+}
 
-/*intro*/
-
-.back_mobile {
-	height: auto;
+/*INTRO*/
+.back-mobile {
+	z-index: -1;
+	height: 462px;
 	width: 320px;
+	background: url(img/back-mobile.png);
+	background-repeat: no-repeat; 
+	background-size: cover; 
+}
+
+.content-grid { 
+	display: grid; 
+	grid-template-columns: 100%; 
+	grid-template-rows: 55px 52px 280px 55px 50px; 
+	gap: 34px 0px; 
+	text-align: center;
+	
+}
+.look{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	color: #fff;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 29px; /*24px??*/
+	line-height: 120%;
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.phone {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background: url(img/phone.png);
+	background-repeat: no-repeat; 
+	width: 320px;
+	height: 286px;
+/*	border: rgba(25,200,50,1.00) solid;*/
+}
+.phone img {
+	width: 111px;
+	height: 197px;
+	margin: 32px; /*чёт не супер*/
+}
+
+.button_download {
+	grid-row-start: 4;
+	grid-row-end: 5;
+	
+	width: 280px;
+	height: 55px;
+	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 29px;
+	
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+	color: #FFFFFF;
+	padding: 21px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.button_download div {
+	border: 3px solid #FFFFFF;
+	align-self: center
 	
 }
